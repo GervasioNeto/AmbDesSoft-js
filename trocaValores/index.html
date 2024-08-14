@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Troca de Variáveis</title>
+</head>
+<body>
+    <h1>Troca de Variáveis A e B</h1>
+    <script>
+        var a = prompt("Informe o valor para a variável A:");
+        var b = prompt("Informe o valor para a variável B:");
+        var aux;
+
+        aux = a;
+        a = b;
+        b = aux;
+
+        document.write("Novo valor da variável A: " + a + "<br>");
+        document.write("Novo valor da variável B: " + b + "<br>");
+    </script>
+</body>
+</html>
