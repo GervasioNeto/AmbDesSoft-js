@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Fatorial</title>
+</head>
+<body>
+    <h1>Calculadora de Fatorial</h1>
+    <script>
+        var n = prompt("Informe a quantidade de números:");
+        var fatorial = 1;
+        var i = n;
+
+        while(i >= 1) {
+            fatorial *= i;
+            i--;
+        }
+
+        document.write("O fatorial de " + n + " é " + fatorial);
+    </script>
+</body>
+</html>
