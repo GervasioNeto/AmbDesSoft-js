@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Série Infinita</title>
+</head>
+<body>
+    <h1>Cálculo da função seno</h1>
+    <script>
+        function fatorial(n) {
+            var fat = 1;
+            for (var i = n; i>= 1; i--){
+                fat *= i
+            }
+            return fat;
+        }
+        var x = prompt("Informe o valor de x:");
+        var n = prompt("Informe o valor de números de termos da série:");
+        var termo;
+        var sinal = 1;
+        var j = 1;
+        var seno = 0;
+        for (var i = 1; i <= n; i++){
+            termo = Math.pow(x, j) / fatorial(j)
+            seno += sinal*termo
+            sinal = -1 * sinal
+            j += 2
+        }
+        document.write("O valor do seno de " + x + " é " + seno.toFixed(2))
+    </script>
+</body>
+</html>
