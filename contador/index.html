@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Contador de Alunos Aprovados</title>
+</head>
+<body>
+    <h1>Contador de Alunos Aprovados</h1>
+    <script>
+        var n = prompt("Informe o número de alunos:");
+        var nota;
+        var contador = 0;
+        var i = 0;
+
+        while (i < n) {
+            nota = prompt("Informe uma nota:");
+            if (nota >= 50) {
+                contador = contador + 1;
+            }
+            i++;
+        }
+
+        document.write("Número de alunos que passaram no exame: " + contador);
+    </script>
+</body>
+</html>
