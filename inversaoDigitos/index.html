@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Inverter</title>
+</head>
+<body>
+    <h1>Inversão de Dígitos</h1>
+    <script>
+        var numero = prompt("Informe um número inteiro positivo:");
+        var invertido = 0;
+        var digito;
+        var q = numero;
+
+        while(q > 0){
+            digito = q % 10;
+            invertido = invertido * 10 + digito;
+            q = Math.floor(q / 10);
+        }
+        document.write("Número original: " + numero + "<br>");
+        document.write("Número invertido: " + invertido);
+    </script>
+</body>
+</html>

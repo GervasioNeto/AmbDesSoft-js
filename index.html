@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Decimal para binário</title>
+</head>
+<body>
+    <h1>Conversão de decimal para binário</h1>
+    <script>
+        var n = prompt("Informe um número decimal:");
+        var q = n;
+        var r = new Array(100)
+        var i = 0;
+
+        while(q > 0){
+            r[i] = q % 2;
+            i++;
+            q = Math.floor(q / 2);
+        }
+        documento.write("O número " + n + " em binário é: ");
+        
+        while (i > 0){
+            i--;
+            document.write(r[i]);
+        }
+    </script>
+</body>
+</html>
